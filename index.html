@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Carvalho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slider.css">
+</head>
+
+<body>
+  <header>
+    <h1>13:23:10</h1>
+    <img src="./assets/logo.svg" alt="logo">
+  </header>
+  <main>
+    <aside>
+      <form action="#" name="card">
+        <h2>Cartão</h2>
+        <input type="text" id="card-number" name="card-name" placeholder="Nº Cartão" required autocomplete="off">
+        <input type="text" id="card-name" name="card-name" placeholder="Nome no Cartão" required autocomplete="off">
+        <input type="text" id="card-validate" name="card-validate" placeholder="Validade" required autocomplete="off">
+        <input type="text" id="card-cvv" name="card-cvv" placeholder="CVV" maxlength="3" minlength="3" pattern="[0-9]+$"
+          required autocomplete="off">
+        <input type="number" id="card-installments" name="card-installments" placeholder="Parcelas" required
+          autocomplete="off">
+        <button type="submit">
+          <img src="./assets/button_add.svg">
+        </button>
+      </form>
+    </aside>
+    <section id="token">
+      <form action="#" id="new-token">
+        <input type="text" placeholder="Token da CC" name="add-token">
+        <button type="submit">
+          <img src="./assets/button_add.svg" alt="Botão add token">
+        </button>
+      </form>
+
+      <form action="#" id="form-cookie">
+        <div class="header-form-cookie">
+          <h2>Cookies</h2>
+          <input type="text" placeholder="INSERIR COOKIE">
+          <button type="submit">
+            <img src="./assets/button-add-warning.svg" alt="Adicionar o Cookies">
+          </button>
+        </div>
+        <input type="text" placeholder="Verificar a quantidade" class="check-amount-cookies">
+      </form>
+    </section>
+    <section id="modos">
+      <h2>
+        Modos
+      </h2>
+
+      <div class="box-modos">
+        <div class="box-modos-line">
+          <label for="drop">DROP</label>
+          <input type="text" placeholder="HORÁRIO ÚNICO" id="drop" name="drop">
+        </div>
+
+        <div class="box-modos-line">
+          <label for="drop-proxy">Proxy</label>
+          <input type="text" placeholder="SKU" id="drop-proxy" name="drop-proxy">
+        </div>
+
+        <div class="box-modos-line">
+          <label class="switch">
+            <input type="checkbox" id="check-drop">
+            <span class="slider round"></span>
+          </label>
+          <div>
+            <img src="./assets/pause.svg" alt="pausar drop">
+            <img src="./assets/play.svg" alt="play drop">
+          </div>
+        </div>
+      </div>
+
+      <div class="box-modos">
+        <div class="box-modos-line">
+          <label>QUICKTASK</label>
+        </div>
+
+        <div class="box-modos-line">
+          <label for="quicktask-proxy">Proxy</label>
+          <input type="text" placeholder="SKU" id="quicktask-proxy" name="quicktask-proxy">
+        </div>
+
+        <div class="box-modos-line">
+          <label class="switch">
+            <input type="checkbox" id="check-quicktask">
+            <span class="slider round"></span>
+          </label>
+          <div>
+            <img src="./assets/pause.svg" alt="pausar quicktask">
+            <img src="./assets/play.svg" alt="play quicktask">
+          </div>
+        </div>
+      </div>
+
+      <div class="box-modos">
+        <div class="box-modos-line">
+          <label>RESTOCK</label>
+        </div>
+
+        <div class="box-modos-line">
+          <label for="restock-proxy">Proxy</label>
+          <input type="text" placeholder="SKU" id="restock-proxy" name="restock-proxy">
+        </div>
+
+        <div class="box-modos-line">
+          <label class="switch">
+            <input type="checkbox" id="check-restock">
+            <span class="slider round"></span>
+          </label>
+          <div>
+            <img src="./assets/pause.svg" alt="pausar restock">
+            <img src="./assets/play.svg" alt="play restock">
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
+</html>
