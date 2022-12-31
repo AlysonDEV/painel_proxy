@@ -60,7 +60,7 @@ header h1 {
 
 header #logo {
   position: absolute;
-  width: 25%;
+  width: 20%;
   left: 10px;
   top: 20px;
 }
@@ -92,6 +92,7 @@ main aside form {
   align-items: center;
   padding: 1rem;
   gap: .5rem;
+  width: 86%;
 
   background: #212633;
   box-shadow: -4px 4px 4px rgba(217, 217, 217, 0.5);
@@ -104,7 +105,7 @@ main aside form h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 2rem;
   line-height: 2rem;
 
   text-align: center;
@@ -172,13 +173,16 @@ main aside form button {
   background-color: transparent;
   border: none;
 }
+main aside form button img {
+  width: 2rem;
+}
 
 #token {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  gap: 26px;
+  gap: .5rem;
 
   width: 28%;
 }
@@ -204,7 +208,7 @@ main aside form button {
   line-height: 48px;
   text-align: center;
 
-  width: 80%;
+  width: 94%;
   height: 2rem;
 }
 
@@ -212,17 +216,14 @@ main aside form button {
   background-color: transparent;
   border: none;
 
-  /* display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px; */
-
   position: absolute;
   width: 1rem;
-/*  height: 50px;*/
-  left: 333px;
-  top: 29px;
+  right: 0px;
+  top: calc(50% - 1rem);
+}
+
+#token #new-token button img {
+  width: 2rem;
 }
 
 #form-cookie {
@@ -233,7 +234,7 @@ main aside form button {
   padding: 10px;
   gap: 5px;
 
-  width: 100%;
+  width: 90%;
 
   background: #212633;
   border-radius: 41px;
@@ -246,17 +247,16 @@ main aside form button {
   padding: 0px;
   gap: 12px;
 
-/*  width: 345px;*/
-/*  height: 275.02px;*/
 
-  font-family: 'Roboto', sans-serif;
-  /* font-style: normal; */
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 61px;
-  /* identical to box height */
 
   text-align: center;
+}
+
+#form-cookie .header-form-cookie h2 {
+  font-family: 'Roboto', sans-serif;  
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 2.5rem;
 }
 
 #form-cookie .header-form-cookie h2::after {
@@ -397,7 +397,6 @@ main aside form button {
   text-align: center;
 }
 
-
 .web-proxy {
   display: flex;
   flex-direction: row;
@@ -447,8 +446,8 @@ main aside form button {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 50px;
-  line-height: 61px;
+  font-size: 1rem;
+/*  line-height: 61px;*/
   /* identical to box height */
 
 
@@ -461,8 +460,8 @@ main aside form button {
   align-items: flex-start;
   padding: 10px;
 
-  width: 461px;
-  height: 93px;
+/*  width: 461px;*/
+  height: 4rem;
 
   background: #FFFFFF;
 
