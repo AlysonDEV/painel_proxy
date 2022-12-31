@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #0E1016;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 34px;
+
+  width: 100vw;
+  height: 100vh;
+
+  font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0px;
+  isolation: isolate;
+
+  width: 1fr;
+  height: 213px;
+}
+
+header h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 45px;
+  gap: 10px;
+
+  width: 390px;
+  height: 102px;
+
+  background: #D9D9D9;
+  border-radius: 20px;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 70px;
+  line-height: 82px;
+
+  color: #000000;
+}
+
+header img {
+  position: absolute;
+  width: 386px;
+  height: 158px;
+  left: 54px;
+  top: 27px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px 40px;
+  gap: 83px;
+
+  width: 1fr;
+  height: 577px;
+}
+
+main aside form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  gap: 10px;
+
+  width: 417px;
+  height: 577px;
+
+  background: #212633;
+  box-shadow: -4px 4px 4px rgba(217, 217, 217, 0.5);
+  border-radius: 41px;
+}
+
+main aside form h2 {
+  display: grid;
+  /* width: 100%; */
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+
+  text-align: center;
+
+  color: #000000;
+
+}
+
+main aside form h2::after {
+  content: "";
+  display: grid;
+  border-bottom: 2px solid #000;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  padding: .1rem;
+  margin-top: -.5rem;
+  /* transform: rotate(-0.16deg); */
+}
+
+main aside form input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px;
+
+  width: 100%;
+  height: 70px;
+
+  background: #2B3143;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #FFFFFF;
+
+  border: none;
+}
+
+/* all */
+main aside form input::-webkit-input-placeholder {
+  /* Webkit */
+  color: #fff;
+}
+
+main aside form input:-moz-placeholder {
+  /* Firefox 18-4 */
+  color: #fff;
+}
+
+main aside form input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #fff;
+}
+
+main aside form input:-ms-input-placeholder {
+  /*  IE10+  */
+  color: #fff;
+}
+
+main aside form button {
+  background-color: transparent;
+  border: none;
+
+}
+
+#token {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 26px;
+
+  width: 365px;
+  height: 573px;
+}
+
+#token #new-token {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 26px 35px;
+  gap: 10px;
+  isolation: isolate;
+  position: relative;
+
+  /* width: 100%; */
+  /* height: 100%; */
+
+  background: #D9D9D9;
+  border-radius: 10px;
+}
+
+#token #new-token input {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  width: 289px;
+  height: 59px;
+}
+
+#token #new-token button {
+  background-color: transparent;
+  border: none;
+
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 10px; */
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 333px;
+  top: 29px;
+}
+
+#form-cookie {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  gap: 5px;
+
+  width: 365px;
+  height: 436px;
+
+  background: #212633;
+  border-radius: 41px;
+}
+
+#form-cookie .header-form-cookie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  width: 345px;
+  height: 275.02px;
+
+  font-family: 'Roboto', sans-serif;
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 61px;
+  /* identical to box height */
+
+  text-align: center;
+}
+
+#form-cookie .header-form-cookie h2::after {
+  content: "";
+  display: grid;
+  border-bottom: 2px solid #000;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.5);
+  padding: .1rem;
+  margin-top: -.5rem;
+}
+
+#form-cookie .header-form-cookie input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  padding: 0px;
+
+  width: 345px;
+  height: 83px;
+
+  background: #FFFFFF;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+}
+
+#form-cookie .header-form-cookie button {
+  background-color: transparent;
+  border: none;
+}
+
+#form-cookie .check-amount-cookies {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 0px;
+  gap: 10px;
+
+  width: 235px;
+  height: 86px;
+
+  background: #D9D9D9;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+
+  color: #000000;
+}
+
+#modos {
+  display: flex;
+  flex-direction: column;
+  padding: 5px 20px;
+  gap: 1.10rem;
+}
+
+#modos h2 {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 61px;
+
+  color: #FFFFFF;
+}
+
+#modos img {
+  cursor: pointer;
+}
+
+#modos .box-modos {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 20px;
+
+  width: 411px;
+  height: 124px;
+
+  background: #D9D9D9;
+}
+
+#modos .box-modos .box-modos-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 43px;
+
+  width: inherit;
+  height: 472px;
+}
+
+#modos .box-modos .box-modos-line label {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+
+  color: #212633;
+}
+
+#modos .box-modos .box-modos-line input {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 10px;
+
+  width: 238px;
+  height: 30px;
+
+  background: #D9D9D9;
+  border: 1px solid #000000;
+
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
