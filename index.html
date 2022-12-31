@@ -15,8 +15,8 @@
 
 <body>
   <header>
-    <h1>13:23:10</h1>
-    <img src="./assets/logo.svg" alt="logo">
+    <h1>00:00:00</h1>
+    <img src="./assets/logo.svg" alt="logo" id="logo">
   </header>
   <main>
     <aside>
@@ -30,9 +30,25 @@
         <input type="number" id="card-installments" name="card-installments" placeholder="Parcelas" required
           autocomplete="off">
         <button type="submit">
-          <img src="./assets/button_add.svg">
+          <img src="./assets/button_add.svg" class="button-add">
         </button>
       </form>
+
+      <div class="web-proxy">
+        <form action="">
+          <input type="text" placeholder="WEBHOOK">
+          <button type="submit">
+            <img src="./assets/button_add.svg" alt="Adicionar o Webhook">
+          </button>
+        </form>
+        <form action="">
+          <input type="text" placeholder="PROXY">
+          <button type="submit">
+            <img src="./assets/button_add.svg" alt="Adicionar o Proxy">
+          </button>
+        </form>
+      </div>
+
     </aside>
     <section id="token">
       <form action="#" id="new-token">
@@ -125,11 +141,24 @@
         </div>
       </div>
 
+      <div class="terminal">
+        <h3>CONSOLE</h3>
+        <textarea>
+
+        </textarea>
+      </div>
+
     </section>
   </main>
   <footer>
 
+
+    
   </footer>
+
+
+  <!-- Script -->
+  <script type="text/javascript" src="./js/script.js"></script>
 </body>
 
 </html>
